@@ -4,7 +4,7 @@
 
 ![result](https://github.com/ldm0715/weather_report/blob/master/images/result.jpg)
 
-![workflow](https://github.com/ldm0715/weather_report/blob/master/images/workflow.jpg)
+![workflow](https://github.com/ldm0715/weather_report/blob/master/images/workflow.png)
 
 ## 步骤
 
