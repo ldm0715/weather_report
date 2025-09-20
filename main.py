@@ -148,8 +148,7 @@ def main():
     weather_data: dict = get_weather_data()["data"]
     verse_data: Dict = get_one_verse()
 
-    # access_token = get_access_token()
-    access_token = "96_Qv9Mtp20-yElicdWZHAbbBytYffKVnMrm7HrrEI-bcZIsyyG9QW57A92QWNynHYuhWTetMGc1OzyP0PsDKyNO8Uuw0h2TkuSjoEHq8ZVNcIN6ndtz7uQNMriGfgHRDcAEAPZL"
+    access_token = get_access_token()
 
     if access_token is not None:
         send_weather(access_token, weather_data, verse_data)
