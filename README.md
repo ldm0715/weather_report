@@ -2,9 +2,9 @@
 
 ## 效果
 
-![result](https://github.com/ldm0715/weather_report/images/result.jpg)
+![result](https://github.com/ldm0715/weather_report/blob/master/images/result.jpg)
 
-![workflow](https://github.com/ldm0715/weather_report/images/workflow.jpg)
+![workflow](https://github.com/ldm0715/weather_report/blob/master/images/workflow.jpg)
 
 ## 步骤
 
