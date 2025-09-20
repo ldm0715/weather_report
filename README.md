@@ -2,9 +2,8 @@
 
 ## 效果
 
-![result](https://github.com/ldm0715/weather_report/blob/master/images/result.jpg)
-
-![workflow](https://github.com/ldm0715/weather_report/blob/master/images/workflow.png)
+<img src="https://github.com/ldm0715/weather_report/blob/master/images/result.jpg" width="67%">
+<img src="https://github.com/ldm0715/weather_report/blob/master/images/workflow.png" width="67%">
 
 ## 步骤
 
