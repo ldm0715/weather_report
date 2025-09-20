@@ -4,11 +4,11 @@ import os
 from time import localtime, struct_time, strftime
 from loguru import logger
 from pprint import pp
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 from typing import Dict
 import json
 
-load_dotenv("config.env")
+# load_dotenv("config.env")
 
 
 # 从测试号信息获取
