@@ -95,6 +95,7 @@ def get_weather_data() -> Dict:
 def send_weather(access_token: str, weather_data: Dict, verse_data: Dict) -> None:
     """
     根据模板来发送消息到微信公众号
+    请求地址为：POST https://api.weixin.qq.com/cgi-bin/message/template/subscribe?access_token=ACCESS_TOKEN
 
     Args:
         weather_data (Dict): 天气信息
@@ -157,4 +158,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# POST https://api.weixin.qq.com/cgi-bin/message/template/subscribe?access_token=ACCESS_TOKEN

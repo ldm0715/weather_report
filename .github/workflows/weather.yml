@@ -2,16 +2,16 @@ name: 天气推送
 
 on:
   schedule:
-    # 设置启动时间，为 UTC 时间, UTC23点 对应北京时间早7点
-    - cron: '00 23 * * *'  # 修正了时间，UTC23点对应北京时间第二天7点
-  # 添加一个手动触发器
+    # 北京时间早上8点 = UTC时间0点
+    - cron: '00 0 * * *'  # UTC时间0点（北京时间8点）
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai  # 设置时区环境变量
     steps:
-      # 这个action可以获取到仓库文件
       - uses: actions/checkout@v5
 
       - name: "Set up Python"
@@ -29,11 +29,11 @@ jobs:
 
       - name: Run weather Report
         run: uv run main.py
-        env:  # 关键修复：在这里设置环境变量
+        env:
           TZ: Asia/Shanghai
           APP_ID: ${{ secrets.APP_ID }}
           APP_SECRET: ${{ secrets.APP_SECRET }}
           OPEN_ID: ${{ secrets.OPEN_ID }}
           TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
-          WEATHER_KEY: ${{ secrets.WEATHER_KEY }}  # 新增
-          LOCATION: ${{ secrets.LOCATION }}        # 新增
+          WEATHER_KEY: ${{ secrets.WEATHER_KEY }}
+          LOCATION: ${{ secrets.LOCATION }}
